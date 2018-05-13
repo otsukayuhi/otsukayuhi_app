@@ -2,7 +2,8 @@
   "scripts": {
     "dev:serve": "webpack --mode development --watch & webpack-dev-server",
     "dev:watch": "webpack --mode development --watch",
-    "build": "webpack --mode production",
+    "dev:build": "webpack --mode development",
+    "pro:build": "webpack --mode production",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
