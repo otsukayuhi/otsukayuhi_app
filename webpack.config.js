@@ -2,8 +2,7 @@ const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
 
   entry: './src/entry.js',
   output: {
