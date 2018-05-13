@@ -73,7 +73,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/_pug/index.pug'
+      template: './src/_pug/index.pug',
+      inject: 'head'
     }),
   ],
   performance: { hints: false },
