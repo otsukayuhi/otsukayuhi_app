@@ -1,3 +1,4 @@
+const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -45,7 +46,7 @@ module.exports = {
             options: {
               sourceMap: true,
               plugins: [
-                require('autoprefixer')({
+                autoprefixer({
                   grid: true
                 })
               ]
