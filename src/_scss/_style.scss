@@ -1,5 +1,55 @@
-body {
-  background: url(images/dummy.png) no-repeat;
-  background-size: cover;
+.container {
+  position: relative;
+  height: 100vh;
   color: #fff;
+}
+
+// tile
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  font-size: 3rem;
+  @include min-md {
+    font-size: 7rem;
+  }
+  @include min-lg {
+    font-size: 10rem;
+  }
+}
+
+// links
+.list {
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 375px;
+  @include min-md {
+    max-width: 500px;
+    bottom: 20px;
+  }
+}
+.item {
+  list-style: none;
+  font-size: 1.2rem;
+  @include min-md {
+    font-size: 1.6rem;
+  }
+  & + & {
+    // margin-left: 15px;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
