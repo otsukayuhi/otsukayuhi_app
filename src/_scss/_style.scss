@@ -12,11 +12,39 @@
   margin: 0;
   height: 100%;
   font-size: 3rem;
+  font-weight: normal;
   @include min-md {
     font-size: 7rem;
   }
   @include min-lg {
     font-size: 10rem;
+  }
+}
+.title_text {
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 3px;
+    height: 1em;
+    background-color: $color-font-white;
+    animation: titleUnderLine 1s linear infinite;
+  }
+}
+
+@keyframes titleUnderLine {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
   }
 }
 
